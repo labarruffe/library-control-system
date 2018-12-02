@@ -1,20 +1,22 @@
 <?php
 
-include 'Dbconfig.class.php';
+class Mysql {
 
-class Mysql extends Dbconfig    {
+    protected $hostName;
+    protected $userName;
+    protected $passCode;
+    protected $dbName;
 
     function __construct() {
-        $dbPara = new Dbconfig();
-        $this -> databaseName = $dbPara -> dbName;
-        $this -> hostName = $dbPara -> serverName;
-        $this -> userName = $dbPara -> userName;
-        $this -> passCode = $dbPara -> passCode;
-        $dbPara = NULL;
+        $ini = parse_ini_file('Config.ini');
+        $this -> hostName = $ini['db_server'];
+        $this -> userName = $ini['db_user'];
+        $this -> passCode = $ini['db_password'];
+        $this -> dbName = $ini['db_name'];
     }
 
     function dbConnect()    {
-        $link=mysqli_connect($this->hostName, $this->userName, $this->passCode, $this->databaseName);
+        $link=mysqli_connect($this->hostName, $this->userName, $this->passCode, $this->dbName);
         if ($link)
             return($link);
         return(FALSE);
