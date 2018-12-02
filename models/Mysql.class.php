@@ -8,7 +8,7 @@ class Mysql {
     protected $dbName;
 
     function __construct() {
-        $ini = parse_ini_file('Config.ini');
+        $ini = parse_ini_file('../Config.ini');
         $this -> hostName = $ini['db_server'];
         $this -> userName = $ini['db_user'];
         $this -> passCode = $ini['db_password'];
