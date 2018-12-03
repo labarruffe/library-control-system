@@ -1,5 +1,5 @@
 <?php
-    include "../models/Funcionario.class.php";
+    include "Funcionario.class.php";
 
 	$id=$_GET['id'];
 
