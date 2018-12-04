@@ -1,14 +1,14 @@
 <?php
     include "header.php";
 
-    include "Funcionario.class.php";
+    include "Fornecedor.class.php";
 
-    $resultado = Funcionario::getAll();
+    $resultado = Fornecedor::getAll();
 
     print('<div class="container">
         <div class="col s12 m8 offset-m1 xl7 offset-xl1">
         <div id="highlight" class="section scrollspy">
-        <h3 class="header">Funcionários</h3>
+        <h3 class="header">Fornecedores</h3>
         <div class="row">
         <div class="col s12"> 
             <table class="highlight">
@@ -16,7 +16,9 @@
                 <tr>
                     <th>Código</th>
                     <th>Nome</th>
-                    <th>Data Contratação</th>
+                    <th>Endereço</th>
+                    <th>Cidade</th>
+                    <th>Telefone</th>
                     <th>Deletar</th>
                     <th>Alterar</th>
                 </tr>
@@ -27,15 +29,18 @@
     while ($linha=mysqli_fetch_array($resultado)) {
         $Id=$linha["id"];
         $Nome=$linha["nome"];
-        $Data_Contratacao=$linha["data_contratacao"];
-        $Data_Contratacao=date("d-m-Y", strtotime($Data_Contratacao));
+        $Endereco=$linha["endereco"];
+        $Cidade=$linha["cidade"];
+        $Telefone=$linha["telefone"];
         print("
             <tr>
                 <td>$Id</td>
                 <td>$Nome</td>
-                <td>$Data_Contratacao</td>
-                <td><a href='delete_funcionario.php?id=$Id&nome=$Nome&dt_contrat=$Data_Contratacao'>Deletar</a></td>
-                <td><a href='update_funcionario.php?id=$Id'>Alterar</a></td>
+                <td>$Endereco</td>
+                <td>$Cidade</td>
+                <td>$Telefone</td>
+                <td><a href='delete_fornecedor.php?id=$Id&nome=$Nome&endereco=$Endereco&cidade=$Endereco&cidade=$Cidade&telefone=$Telefone'>Deletar</a></td>
+                <td><a href='update_fornecedor.php?id=$Id'>Alterar</a></td>
             </tr>
         ");  
     }

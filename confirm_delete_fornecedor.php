@@ -1,8 +1,8 @@
 <?php
-    include "Funcionario.class.php";
+    include "Fornecedor.class.php";
 
     $id=$_GET['cod_del']; 
 
-    Funcionario::delete($id);  
+    Fornecedor::delete($id);  
 ?>
 <p><a href="index.php">Voltar</a>
