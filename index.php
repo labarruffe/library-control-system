@@ -10,7 +10,7 @@
             <h5 class="header col s12 light">Sistema de Gerenciamento de Estoque</h5>
         </div>
         <div class="row center">
-            <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+            <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Estoque</a>
         </div>
         <br><br>
         </div>
@@ -23,8 +23,8 @@
         <div class="row">
             <div class="col s12 m4">
             <div class="icon-block">
-                <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                <h5 class="center">Speeds up development</h5>
+                <h2 class="center light-blue-text"><i class="material-icons">extension</i></h2>
+                <h5 class="center">Acervo</h5>
 
                 <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
             </div>
@@ -41,8 +41,8 @@
 
             <div class="col s12 m4">
             <div class="icon-block">
-                <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-                <h5 class="center">Easy to work with</h5>
+                <h2 class="center light-blue-text"><i class="material-icons">local_shipping</i></h2>
+                <h5 class="center">Fornecedores</h5>
 
                 <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
             </div>
