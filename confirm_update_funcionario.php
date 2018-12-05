@@ -17,4 +17,4 @@
         Dados do funcionário alterados com sucesso!"
     );
 ?>
-<p><a href="index.php">Voltar</a>
+<p><a href="lista_funcionarios.php">Voltar</a>

@@ -16,4 +16,4 @@
         Dados do fornecedor alterados com sucesso!"
     );
 ?>
-<p><a href="index.php">Voltar</a>
+<p><a href="lista_fornecedores.php">Voltar</a>

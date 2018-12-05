@@ -12,4 +12,4 @@
 	<input type="hidden" name="cod_del" value="<?php print($id)?>">
 	<br><input type="submit" value="Deletar">
 </form>
-<p><a href="index.php">Voltar</a>
+<p><a href="lista_funcionarios.php">Voltar</a>
