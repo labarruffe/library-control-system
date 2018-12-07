@@ -3,55 +3,31 @@
 
     include "Livro.class.php";
 
-    // $resultado = Livros::getAll();
-
-    print('
+    $resultado = Livro::getAll();
+print('<div class="container">
+        <h3 class="header">Acervo</h3>
+        </div>
+        ');
+while ($linha=mysqli_fetch_array($resultado))  {
+   $Id=$linha["id"];
+   $Titulo=$linha["titulo"];
+   $Ano_publicacao=$linha["ano_publicacao"];
+   $Edicao=$linha["edicao"];
+   $Editora=$linha["editora"];
+   $Id_fornecedor=$linha["nome"];
+    print('<div id="profile-card" class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="images/user-bg.jpg" alt="user bg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">
+      <h6>'.$Titulo.'</h6>
+       </span>
+      <p><i class="mdi-action-perm-identity"></i> '.$Editora.'</p>
+      <p><i class="mdi-action-perm-phone-msg"></i> '.$Ano_publicacao.' - '.$Edicao.'º Ed</p>
+    </div>
+  </div>');
+}
     
-    ');
-
-    // print('<div class="container">
-    //     <div class="col s12 m8 offset-m1 xl7 offset-xl1">
-    //     <div id="highlight" class="section scrollspy">
-    //     <h3 class="header">Funcionários</h3>
-    //     <div class="row">
-    //     <div class="col s12"> 
-    //         <table class="highlight">
-    //         <thead>
-    //             <tr>
-    //                 <th>Código</th>
-    //                 <th>Nome</th>
-    //                 <th>Data Contratação</th>
-    //                 <th>Deletar</th>
-    //                 <th>Alterar</th>
-    //             </tr>
-    //         </thead>
-    //         <tbody>
-    // ');    
-    
-    // while ($linha=mysqli_fetch_array($resultado)) {
-    //     $Id=$linha["id"];
-    //     $Nome=$linha["nome"];
-    //     $Data_Contratacao=$linha["data_contratacao"];
-    //     $Data_Contratacao=date("d-m-Y", strtotime($Data_Contratacao));
-    //     print("
-    //         <tr>
-    //             <td>$Id</td>
-    //             <td>$Nome</td>
-    //             <td>$Data_Contratacao</td>
-    //             <td><a href='delete_funcionario.php?id=$Id&nome=$Nome&dt_contrat=$Data_Contratacao'>Deletar</a></td>
-    //             <td><a href='update_funcionario.php?id=$Id'>Alterar</a></td>
-    //         </tr>
-    //     ");  
-    // }
-    // print('</tbody>
-    //         </table>
-    //         </div>
-    //         </div>
-    //         </div>
-    //         </div>
-    //         </div>
-    //     ');
-        
-    include "footer.php";
-
+include "footer.php";
 ?>

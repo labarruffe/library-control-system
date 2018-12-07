@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    position: relative;
+    margin-top: -68px;
+  }
+
+.livro-container {
+    border: 2px solid black;
+}
+  
+.card {
+    border: 2px solid darkslategrey;
+    background-color: lightgrey;
+    height: 250px;
+    width: 17%;
+    position: relative;
+    display: inline-flex;
+    /* margin: 5px; */
+    margin: 50px;
+    margin-left: 55px;
+}

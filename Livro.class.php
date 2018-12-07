@@ -38,10 +38,10 @@ class Livro {
         $ok = $mysql->dbConnect() or die ("Não é possível conectar-se ao servidor.");
 
         if ($isOrdered) {
-            $resultado = mysqli_query($ok, "Select * from livros order by nome") or 
+            $resultado = mysqli_query($ok, "Select l.id, l.titulo, l.ano_publicacao, l.edicao, l.editora, f.nome from livros l, fornecedores f where l.id_fornecedor = f.id order by titulo") or 
             die ("Não é possível consultar livros.");
         } else {
-            $resultado = mysqli_query($ok, "Select * from livros") or 
+            $resultado = mysqli_query($ok, "Select l.id, l.titulo, l.ano_publicacao, l.edicao, l.editora, f.nome from livros l, fornecedores f where l.id_fornecedor = f.id") or 
             die ("Não é possível consultar livros.");
         }
         

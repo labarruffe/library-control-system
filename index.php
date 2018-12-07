@@ -10,7 +10,7 @@
             <h5 class="header col s12 light">Sistema de Gerenciamento de Estoque</h5>
         </div>
         <div class="row center">
-            <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Estoque</a>
+            <a href="estoque.php" id="download-button" class="btn-large waves-effect waves-light orange">Estoque</a>
         </div>
         <br><br>
         </div>
