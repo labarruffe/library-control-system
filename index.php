@@ -5,9 +5,9 @@
     print('<div class="section no-pad-bot" id="index-banner">
         <div class="container">
         <br><br>
-        <h1 class="header center orange-text">Biblioteca</h1>
+        <h1 class="header center orange-text">Sistema de Gerenciamento Biblioteca Barrufino</h1>
         <div class="row center">
-            <h5 class="header col s12 light">Sistema de Gerenciamento de Estoque</h5>
+            <h5 class="header col s12 light"></h5>
         </div>
         <div class="row center">
             <a href="estoque.php" id="download-button" class="btn-large waves-effect waves-light orange">Estoque</a>
@@ -48,16 +48,6 @@
         <br><br>
         </div>
     ');
-
-    #print('<p><a href="lista_funcionarios.php">Lista de Funcionários</a>');
-
-    if($_POST) {
-        # include "Mysql.class.php";
-
-        # $mysql = new Mysql();
-
-        # $mysql->dbConnect();
-    }
 
     include "footer.php";
 ?>

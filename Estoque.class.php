@@ -29,6 +29,8 @@ class Estoque {
         return $resultado;
     }
 
+    
+
 }
 
 ?>

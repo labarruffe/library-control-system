@@ -7,6 +7,28 @@
     </div>
   </footer>
 
+  <style type="text/css">
+* {
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+  #special { 
+    display: flex;
+    height: 68vh;
+    overflow: 	hidden;
+  }
+  footer{
+    
+
+  
+    }
+  </style>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

@@ -1,4 +1,6 @@
 <?php
+    include "header.php";
+
     include "Fornecedor.class.php";
 
 	$id=$_GET['id'];

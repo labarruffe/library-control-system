@@ -1,4 +1,6 @@
 <?php
+	include "header.php";
+	
 	$id=$_GET['id'];
 	$nome=$_GET['nome'];
 	$endereco=$_GET['endereco'];
@@ -11,9 +13,13 @@
 	   	Cidade: <b>$cidade</b><br>
 	   	Telefone: <b>$telefone</b><br>"
 	);
-?>
+print('
 <form action="confirm_delete_fornecedor.php" method="get">
 	<input type="hidden" name="cod_del" value="<?php print($id)?>">
 	<br><input type="submit" value="Deletar">
 </form>
-<p><a href="lista_fornecedores.php">Voltar</a>
+<p><a id="special" href="lista_fornecedores.php">Voltar</a>
+');
+include "footer.php";
+
+?>

@@ -1,4 +1,6 @@
 <?php
+	include('header.php');
+
 	$id=$_GET['id'];
 	$nome=$_GET['nome'];
 	$dt_contrat=$_GET['dt_contrat'];
@@ -7,9 +9,15 @@
 	   	Nome: <b>$nome</b><br>
 	   	Data Contratação: <b>$dt_contrat</b><br>"
 	);
+
+	print('
+		<form action="confirm_delete_funcionario.php" method="get">
+			<input type="hidden" name="cod_del" value="<?php print($id)?>">
+			<br><input type="submit" value="Deletar">
+		</form>
+		<p><a id="special" href="lista_funcionarios.php">Voltar</a>
+');
+
+
+	include('footer.php');
 ?>
-<form action="confirm_delete_funcionario.php" method="get">
-	<input type="hidden" name="cod_del" value="<?php print($id)?>">
-	<br><input type="submit" value="Deletar">
-</form>
-<p><a href="lista_funcionarios.php">Voltar</a>

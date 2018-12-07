@@ -1,4 +1,6 @@
 <?php
+    include "header.php";
+    
     include "Funcionario.class.php";
 
 	$id=$_GET['id'];
@@ -12,7 +14,8 @@
     $Data_Contratacao=date("d-m-Y", strtotime($Data_Contratacao));
 	
 	print("<h3>Alterando os dados do funcionário:</h3><p>");
-?>
+
+    ?>
 
 <form action="confirm_update_funcionario.php" method="get">
     Código: <?php print($Id)?>
@@ -23,3 +26,4 @@
     <p><input type="submit" value="Alterar Dados">
 </form>
 <p><a href="lista_funcionarios.php">Voltar</a>
+
